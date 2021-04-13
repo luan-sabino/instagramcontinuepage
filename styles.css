@@ -1,0 +1,165 @@
+html, body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    background-color: #FAFAFA;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.instagram-phone{
+    background-image: url(rsc/instragram-phone-background.png);
+    background-size: 454px 618px;
+    width: 454px;
+    height: 618px;
+    margin:auto;
+    margin-top: 30px;
+    margin-right: -15px;
+}
+
+.illustrative-image{
+    visibility: visible;
+    width: 240px;
+    height: 427px;
+    position: absolute;
+    margin: 100px;
+    margin-left: 151px;
+    margin-right: auto;
+}
+
+@keyframes instagram-phoneFade{
+
+    0%{
+        opacity:1;
+    }
+    10%{
+        opacity:1;
+    }
+    20%{
+        opacity:0;
+    }
+    90%{
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }    
+}
+
+.instagram-phone img:nth-of-type(1){
+    animation-delay: 16s;
+}
+
+.instagram-phone img:nth-of-type(2){
+    animation-delay: 12s;
+}
+
+.instagram-phone img:nth-of-type(3){
+    animation-delay: 8s;
+}
+
+.instagram-phone img:nth-of-type(4){
+    animation-delay: 4s;
+}
+
+.instagram-phone img:nth-of-type(5){
+    animation-delay: 0s;
+}
+
+.instagram-phone img.illustrative-image {
+    animation-name: instagram-phoneFade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: normal;
+}
+
+.instagram-continue{
+    max-width: 350px;
+    margin:auto;
+    margin-top: 45px;
+    margin-left: 0px;
+}
+
+.perfil-group{
+    width: 350px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+
+.perfil-group img:first-child{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.perfil-group img:nth-child(2){
+    margin-top: 15px;
+    margin-bottom: 35px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 18px;
+    color: #0095f6;
+}
+
+.perfil-group a:nth-child(3){
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    background-color: #0095f6;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.perfil-group a:nth-child(4){
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.perfil-group p{
+    color: rgb(38, 38, 38);
+}
+
+.perfil-group p:nth-child(1){
+    margin-bottom: 5px;
+}
+
+.perfil-group p:nth-child(2){
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.getapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.getapp img{
+    margin-top: 0px;
+    max-width: 136px;
+    max-height: 40px;
+}
+
+.getapp p{
+    margin-bottom: 5px;
+}
